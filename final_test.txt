@@ -1,0 +1,185 @@
+Found cargo project: [32mrsheet[0m
+Located autotests for [32mrsheet[0m
+Question 1
+Your answer to question 1 is 81 words long.
+Question 2
+Your answer to question 2 is 79 words long.
+Question 3
+Your answer to question 3 is 89 words long.
+Question 4
+Your answer to question 4 is 94 words long.
+Question 5
+Your answer to question 5 is 50 words long.
+6991 cargo build --target-dir target # crate.tar
+   Compiling proc-macro2 v1.0.79
+   Compiling unicode-ident v1.0.12
+   Compiling libc v0.2.153
+   Compiling crunchy v0.2.2
+   Compiling serde v1.0.197
+   Compiling autocfg v1.2.0
+   Compiling quote v1.0.35
+   Compiling version_check v0.9.4
+   Compiling syn v2.0.58
+   Compiling tiny-keccak v2.0.2
+   Compiling memchr v2.7.2
+   Compiling cfg-if v1.0.0
+   Compiling getrandom v0.2.14
+   Compiling aho-corasick v1.1.3
+   Compiling once_cell v1.19.0
+   Compiling serde_derive v1.0.197
+   Compiling utf8parse v0.2.1
+   Compiling regex-syntax v0.8.3
+   Compiling regex-automata v0.4.6
+   Compiling anstyle-parse v0.2.3
+   Compiling const-random-macro v0.1.16
+   Compiling smartstring v1.0.1
+   Compiling ahash v0.8.11
+   Compiling num-traits v0.2.18
+   Compiling anstyle-query v1.0.2
+   Compiling anstyle v1.0.6
+   Compiling colorchoice v1.0.0
+   Compiling anstream v0.6.13
+   Compiling const-random v0.1.18
+   Compiling regex v1.10.4
+   Compiling serde_json v1.0.115
+   Compiling zerocopy v0.7.32
+   Compiling static_assertions v1.1.0
+   Compiling smallvec v1.13.2
+   Compiling thin-vec v0.2.13
+   Compiling rhai_codegen v2.0.0
+   Compiling heck v0.5.0
+   Compiling strsim v0.11.1
+   Compiling clap_lex v0.7.0
+   Compiling ryu v1.0.17
+   Compiling bitflags v2.5.0
+   Compiling log v0.4.21
+   Compiling itoa v1.0.11
+   Compiling rhai v1.17.1
+   Compiling env_filter v0.1.0
+   Compiling clap_builder v4.5.2
+   Compiling clap_derive v4.5.4
+   Compiling humantime v2.1.0
+   Compiling env_logger v0.11.3
+   Compiling clap v4.5.4
+   Compiling rsheet_lib v0.1.3
+   Compiling rsheet v0.1.0 (/tmp/tmpu7hkxzur/autotest)
+    Finished dev [unoptimized + debuginfo] target(s) in 33.28s
+Test test_01_01_simplest_test_cases (simplest_test_cases #01) - passed
+Test test_01_02_simplest_test_cases (simplest_test_cases #02) - passed
+Test test_01_03_simplest_test_cases (simplest_test_cases #03) - passed
+Test test_01_04_simplest_test_cases (simplest_test_cases #04) - passed
+Test test_01_05_simplest_test_cases (simplest_test_cases #05) - passed
+Test test_01_06_simplest_test_cases (simplest_test_cases #06) - passed
+Test test_01_07_simplest_test_cases (simplest_test_cases #07) - passed
+Test test_01_08_simplest_test_cases (simplest_test_cases #08) - passed
+Test test_01_09_simplest_test_cases (simplest_test_cases #09) - passed
+Test test_01_10_simplest_test_cases (simplest_test_cases #10) - passed
+Test test_02_01_simple_calculations (simple_calculations #01) - passed
+Test test_02_02_simple_calculations (simple_calculations #02) - passed
+Test test_02_03_simple_calculations (simple_calculations #03) - passed
+Test test_02_04_simple_calculations (simple_calculations #04) - passed
+Test test_02_05_simple_calculations (simple_calculations #05) - passed
+Test test_02_06_simple_calculations (simple_calculations #06) - passed
+Test test_03_01_simple_references (simple_references #01) - passed
+Test test_03_02_simple_references (simple_references #02) - passed
+Test test_03_03_simple_references (simple_references #03) - passed
+Test test_03_04_simple_references (simple_references #04) - passed
+Test test_03_05_simple_references (simple_references #05) - passed
+Test test_03_06_simple_references (simple_references #06) - passed
+Test test_04_01_vectors_and_matricies (vectors_and_matricies #01) - passed
+Test test_04_02_vectors_and_matricies (vectors_and_matricies #02) - passed
+Test test_04_03_vectors_and_matricies (vectors_and_matricies #03) - passed
+Test test_04_04_vectors_and_matricies (vectors_and_matricies #04) - passed
+Test test_05_01_multiple_readers (multiple_readers #01) - passed
+Test test_05_02_multiple_readers (multiple_readers #02) - passed
+Test test_06_01_one-level_dependency_changes (one-level_dependency_changes #01) - passed
+Test test_06_02_one-level_dependency_changes (one-level_dependency_changes #02) - passed
+Test test_06_03_one-level_dependency_changes (one-level_dependency_changes #03) - passed
+Test test_06_04_one-level_dependency_changes (one-level_dependency_changes #04) - passed
+Test test_06_05_one-level_dependency_changes (one-level_dependency_changes #05) - passed
+Test test_07_01_vector-matrix_dep_changes (vector-matrix_dep_changes #01) - passed
+Test test_07_02_vector-matrix_dep_changes (vector-matrix_dep_changes #02) - passed
+Test test_07_03_vector-matrix_dep_changes (vector-matrix_dep_changes #03) - passed
+Test test_07_04_vector-matrix_dep_changes (vector-matrix_dep_changes #04) - passed
+Test test_08_01_multi-layered_deps (multi-layered_deps #01) - passed
+Test test_08_02_multi-layered_deps (multi-layered_deps #02) - passed
+Test test_08_03_multi-layered_deps (multi-layered_deps #03) - passed
+Test test_08_04_multi-layered_deps (multi-layered_deps #04) - passed
+Test test_08_05_multi-layered_deps (multi-layered_deps #05) - passed
+Test test_09_01_circular_deps (circular_deps #01) - failed (Incorrect output)
+Your program produced these 2 lines of output:
+A1 = None
+Error (hidden by mark mode)
+
+The correct 2 lines of output for this test were:
+Error (hidden by mark mode)
+Error (hidden by mark mode)
+
+The difference between your output(-) and the correct output(+) is:
+- A1 = None
+  Error (hidden by mark mode)
++ Error (hidden by mark mode)
+
+The input for this test was:
+set A1 A2
+set A2 A1
+sleep 400
+get A1
+get A2
+Note: last character in above input is not '\n'
+
+You can reproduce this test by executing these commands:
+  6991 cargo build --target-dir target # crate.tar
+  echo -n -e 'set A1 A2\nset A2 A1\nsleep 400\nget A1\nget A2' | ./target/debug/rsheet --mark-mode
+Test test_09_02_circular_deps (circular_deps #02) - failed (Incorrect output)
+Your program produced these 2 lines of output:
+ANS1 = 6
+ANS1 = 6
+
+The correct 2 lines of output for this test were:
+ANS1 = 6
+Error (hidden by mark mode)
+
+The difference between your output(-) and the correct output(+) is:
+  ANS1 = 6
+- ANS1 = 6
++ Error (hidden by mark mode)
+
+The input for this test was:
+set A1 1
+set A2 2
+set B1 1
+set B2 2
+set ANS1 sum(A1_B2)
+get ANS1
+set A2 ANS1
+sleep 400
+get ANS1
+Note: last character in above input is not '\n'
+
+You can reproduce this test by executing these commands:
+  6991 cargo build --target-dir target # crate.tar
+  echo -n -e 'set A1 1\nset A2 2\nset B1 1\nset B2 2\nset ANS1 sum(A1_B2)\nget ANS1\nset A2 ANS1\nsleep 400\nget ANS1' | ./target/debug/rsheet --mark-mode
+Test test_09_03_circular_deps (circular_deps #03) - failed (Incorrect output)
+Your program produced this line of output:
+A1 = None
+
+The correct 1 lines of output for this test were:
+Error (hidden by mark mode)
+
+The difference between your output(-) and the correct output(+) is:
+- A1 = None
++ Error (hidden by mark mode)
+
+The input for this test was:
+A: set A1 A2
+B: sleep 400
+B: set A2 A1
+C: sleep 800
+C: get A1
+Note: last character in above input is not '\n'
+
+You can reproduce this test by executing these commands:
+  6991 cargo build --target-dir target # crate.tar
+  echo -n -e 'A: set A1 A2\nB: sleep 400\nB: set A2 A1\nC: sleep 800\nC: get A1' | ./target/debug/rsheet --mark-mode
+42 tests passed 3 tests failed

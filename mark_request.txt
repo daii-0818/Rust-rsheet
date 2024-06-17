@@ -1,0 +1,71 @@
+# RSheets Mark Request
+
+# Marked Questions
+
+These questions are listed in the spec, and you must fill them out
+to receive marks for the Design Questions.
+
+## Question 1:
+In my progrom, I use an enum Command to check 'set' and 'get'("src/lib.rs:15"). 
+I use HashMap to build my spreadsheet structure and store my cell 
+values with managing dependencies that can find cells' relationships
+more easily.("src/spreadsheet.rs:10") The 'set' function can update 
+the cell values and recalculates dependencies, while the 'get' function 
+search the cell value. Maybe there is another way to use dependency 
+relationship graph which can provide more structure. But hash is 
+simpler. It is good for traightforward dependency scenarios.
+## Question 2:
+In the code snippets, the handling of Scalar, Vector, and Matrix variables 
+occurs in methods that resolve or convert these variable types. Scalars 
+are resolved in `resolve_variable`, while Vectors and Matrices are handled 
+in `resolve_range`("src/spreadsheet.rs:129-180"). The `convert_range_to_cell_argument` method determines 
+if a range represents a Vector or Matrix. There is some code duplication 
+when handling Scalars, with similar code appearing in multiple places. 
+This could be improved by creating utility functions to centralize these 
+operations, reducing redundancy and improving maintainability.
+## Question 3:
+I use 'Arc' and 'Mutex' for managing shared resources ("src/lib.rs:25") 
+across threads. Arc ensures thread-safe ownership, while Mutex provides 
+synchronization for concurrent access to the Spreadsheet object and thread tracking.
+In the single-threaded version, these structures aren't necessary because there's 
+no concurrent data access. And it will be like:
+let spreadsheet = Spreadsheet::new();
+loop {
+    match manager.accept_new_connection() {
+        Ok((mut recv, mut send)) => {
+            loop {
+                // process incoming message and send response
+                let msg = recv.read_message().unwrap();
+                let reply = parse_command(&msg);
+                send.write_message(reply);
+            }
+        },
+        Err(_) => break,
+    }
+}
+## Question 4:
+I use the 'set' method stores the most recent update for a given cell and then updates 
+all dependent cells. 'Set' maintains a dependency chain that tracks which cells depend 
+on other cells, allowing subsequent updates to propagate through the chain of dependencies.
+I will check self-referential loops to avoid circular dependencies without an endless loop.
+Furthermore, it uses asynchronous updates to allow concurrent processing, reducing 
+bottlenecks caused by longer-running calculations("src/spreadsheet.rs:194").The 
+'update_dependent_cells'("src/spreadsheet.rs:93") method plays a critical role in 
+updating the dependent cells after the primary cell has been updated, reinforcing 
+the dependency chain's integrity.
+## Question 5:
+I use multiple threads to calculate dependency updates. The thread performing dependency 
+updates in the code is the one created with s.spawn("src/lib.rs:35") within the thread scope. It manages 
+incoming connections and processes commands such as Get and Set, which involve calculations 
+for updating dependent cells via the Spreadsheet's set method.
+# Questions to the Marker (OPTIONAL)
+
+Remember: you don't have to fill these out; but if
+you want to get feedback on a particular element of
+your code; you can!
+
+1.
+
+2.
+
+3.
